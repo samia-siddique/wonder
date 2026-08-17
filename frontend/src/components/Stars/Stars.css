@@ -1,0 +1,14 @@
+.stars{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.stars span{
+    position: absolute;
+    background: #F4F3EE;
+    border-radius: 50%;
+    opacity: 0.7;
+}
