@@ -1,0 +1,10 @@
+.planets {
+    background: #08091B;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #F7F8FF;
+    font-family: "Outfit", sans-serif;
+    overflow: hidden;
+}
+

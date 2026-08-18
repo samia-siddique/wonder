@@ -1,4 +1,116 @@
-.home{
+.home {
+    position: relative;
     background: #08091B;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #F7F8FF;
+    font-family: "Outfit", sans-serif;
+    overflow: hidden;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px 60px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid #8B7CFF;
+    background: #08091B;
+    color: #F7F8FF;
+    transition: .3s;
+}
+
+.explore-btn:hover{
+    background-color: #8b7cff30;
+}
+
+
+.home-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    flex: 1;
+}
+
+.left-home {
+    max-width: 600px;
+    gap: 30px;
+}
+
+.left-home h1 {
+    font-size: 85px;
+    line-height: 0.85;
+    letter-spacing: -4px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.left-home p {
+    width: 80%;
+    line-height: 2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.light-moon {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    opacity: 0.2;
+    filter: blur(3px);
+    left: 90px;
+    bottom: 90px;
+    z-index: -1;
+}
+
+.right-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-home img {
+    width: min(390px, 35vw);
+    height: auto;
+    animation: floatMoon 5s ease-in-out infinite;
+}
+
+@keyframes floatMoon {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
 }

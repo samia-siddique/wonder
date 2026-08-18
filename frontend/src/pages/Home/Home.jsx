@@ -8,35 +8,40 @@ const Home = () => {
         <div className='home'>
             <StarBackground />
 
-            <nav>
+            <div className='nav'>
+                <h2>WONDER</h2>
+
                 <ul>
                     <li>Home</li>
                     <li>Planets</li>
                     <li>About</li>
                 </ul>
-            </nav>
 
-            <div className="left-home">
-
-                <h1>SPACE</h1>
-
-                <p>Beyond Earth, there are these weird oval shaped
-                    things floating around. Do you know why they're
-                    here? Everything   has a meaning... but what's
-                    theirs? What if someone lives there? Sounds
-                    creepy. Do we need more circle shaped rocks?</p>
-                
-                <img src={planets.moon} alt="moon-img" className='light-moon' />
-
-                <button>Explore</button>
+                <button className='explore-btn'>Explore</button>
             </div>
 
+            <div className='home-container'>
+                <div className="left-home">
 
-            <div className="right-home">
-                <img src={planets.moon} alt="moon-img" />
+                    <h1>SPACE</h1>
+
+                    <p>Beyond Earth, there are these weird oval shaped
+                        things floating around. Do you know why they're
+                        here? Everything   has a meaning... but what's
+                        theirs? What if someone lives there? Sounds
+                        creepy. Do we need more circle shaped rocks?</p>
+
+                    <img src={planets.moon} alt="moon-img" className='light-moon' />
+
+                    <button className='explore-btn'>Explore</button>
+                </div>
+
+
+                <div className="right-home">
+                    <img src={planets.moon} alt="moon-img" />
+                </div>
+
             </div>
-
-
         </div>
     )
 }
