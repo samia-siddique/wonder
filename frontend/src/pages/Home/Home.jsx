@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css"
 import StarBackground from '../../components/Stars/Stars'
 import planets from '../../assets/planets'
+import Planets from '../Planets/Planets'
 
 const Home = () => {
     return (
@@ -42,6 +43,8 @@ const Home = () => {
                 </div>
 
             </div>
+
+            <Planets />
         </div>
     )
 }
