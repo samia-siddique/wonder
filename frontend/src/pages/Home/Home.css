@@ -25,6 +25,12 @@
 
 .nav li {
     list-style: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav li:hover {
+    color: #f7f8ffa3;
 }
 
 .nav h2 {
@@ -43,7 +49,7 @@
     transition: .3s;
 }
 
-.explore-btn:hover{
+.explore-btn:hover {
     background-color: #8b7cff30;
 }
 

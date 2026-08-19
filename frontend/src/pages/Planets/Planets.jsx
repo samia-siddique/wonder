@@ -1,5 +1,4 @@
 import React from 'react'
-import StarBackground from '../../components/Stars/Stars'
 import planets from '../../assets/planets'
 import "./Planets.css"
 
@@ -56,7 +55,6 @@ const Planets = () => {
 
   return (
     <div className='planets'>
-      <StarBackground />
       <p>SO, WHAT'S OUT THERE?</p>
 
       <h2>Meet the <span>8</span> worlds in our neighborhood</h2>

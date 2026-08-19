@@ -3,6 +3,7 @@ import "./Home.css"
 import StarBackground from '../../components/Stars/Stars'
 import planets from '../../assets/planets'
 import Planets from '../Planets/Planets'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
     return (
@@ -45,6 +46,7 @@ const Home = () => {
             </div>
 
             <Planets />
+            <Footer />
         </div>
     )
 }
